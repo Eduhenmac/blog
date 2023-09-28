@@ -9,9 +9,23 @@ body{
     margin: 0px;
 }
 
+/* barra lateral*/
 a{ text-decoration: none;}
 
 a:hover{
     text-decoration: underline;
     color: #999;
 }
+
+.linha-vertical {
+    border-left: 2px solid #f9f9f9;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+
+  }
+
+  .espaco{
+    width: 100px;
+  }
+
+  .esp {
+    height: 30px;
+  }
