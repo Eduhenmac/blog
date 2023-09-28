@@ -29,3 +29,13 @@ a:hover{
   .esp {
     height: 30px;
   }
+
+  .font{
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .fontUlt{
+    font-size: 18px;
+    font-weight: bold;
+  }
