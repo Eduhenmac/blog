@@ -1,11 +1,14 @@
+
+var colapse = document.getElementById("menuCursos")
+var menu = document.getElementsByTagName("body")
+
 function pesquisar(){
-    var iput, filtro, menu, menuItems, links, colapse
+    var iput, filtro, menu, menuItems, links, 
     iput = document.getElementById("pes")
     filtro = iput.value.toUpperCase()
-    colapse = document.getElementById("menuCursos")
     menu = document.getElementById("menu")
     menuItems = menu.getElementsByTagName("li")
-    colapse.classList.toggle("collapse")
+    colapse.classList.remove("collapse")
     for(let i=0; i< menuItems.length; i++){
         links = menuItems[i].getElementsByTagName("a")[0]
         if(links.innerHTML.toUpperCase().indexOf(filtro)>-1){
@@ -15,3 +18,7 @@ function pesquisar(){
         }
     }
 }
+
+menu[0].addEventListener('click', function() {
+    colapse.classList.add("collapse")
+})
